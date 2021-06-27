@@ -1,0 +1,64 @@
+.title-sm {
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.workToday {
+    height: 400px;
+    width: 100%;
+}
+
+.workTodayListTitle {
+    margin: 20px 0;
+}
+
+.workTodayList {
+    list-style: none;
+    padding: 0;margin: 0;
+    position: relative;
+}
+
+.workTodayItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+
+.workTodayImg {
+    width: 55px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #1877f2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.workTodayImgText {
+    position: absolute;
+    font-size: 10px;
+}
+
+.headerText {
+    width: 100%;
+}
+
+.headerName {
+    margin-bottom: 0;
+    max-inline-size: 240px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.headerSub {
+    font-size: 10px;
+    color: grey;
+    margin-top: 5px;
+}

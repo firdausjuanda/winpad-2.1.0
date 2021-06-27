@@ -1,0 +1,131 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+    .sidebar {
+        flex: 3;
+        margin: 0;
+        display: none;
+    }
+    .sidebarWrapper {
+        padding: 20px;
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sidebar {
+        flex: 3;
+        margin: 0;
+    }
+    .sidebarWrapper {
+        padding: 20px;
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent
+}
+
+.sidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px rgb(211, 211, 211) solid;
+    margin-bottom: 30px;
+}
+
+.sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding:15px 10px;
+    border-radius: 10px;
+}
+
+.sidebarListItem:hover {
+    background-color: #eaeaea;
+}
+
+.sidebarIcon {
+    margin-right: 10px;
+}
+
+.sidebarListButton {
+    border-radius: 10px;
+    color: #1877f2;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sidebarListButton:hover {
+    background-color: #eaeaea;
+}
+
+.sidebarHr {
+    margin: 20px 0;
+    color: #eaeaea;
+}
+
+.sidebarFriendListTitle {
+    margin: 20px 0;
+}
+
+.sidebarFriendList {
+    list-style: none;
+    padding: 0;margin: 0;
+    position: relative;
+}
+
+.sidebarFriendItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sidebarFriendImg {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebarFriendName {
+    max-inline-size: 43%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebarFriendFollow {
+    position: absolute;
+    right: 0;
+    background-color: #1877f2;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor:pointer;
+    font-weight: bold;
+}
+.sidebarFriendFollow:hover {
+    background-color: #cde3ff;
+    color: #1877f2;
+    
+}
+

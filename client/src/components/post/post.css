@@ -1,0 +1,107 @@
+.postContainer{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 400px;
+    margin-bottom: 10px;
+}
+
+.postHeader {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px #eaeaea solid;
+
+}
+
+.postHeaderImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px #eaeaea solid;
+}
+
+.postHeaderName {
+    font-weight: bold;
+}
+
+.postHeaderSub {
+    font-size: 10px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.postHeaderOption {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.postBodyImg {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.postTitle {
+    padding: 10px;
+}
+
+.postTitleText {
+    font-weight: bold;
+}
+.postTitleSubText {
+    font-weight: normal;
+}
+
+.postAction {
+    border-bottom: 1px #eaeaea solid;
+}
+
+.postActionList {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.postActionListItem {
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.postActionText {
+    margin-left: 10px;
+}
+
+.postComment {
+    padding: 10px;
+}
+
+.commentProfileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px #eaeaea solid;
+}
+
+.commentProfile {
+    flex: 3;
+}
+
+.commentText {
+    flex: 9;
+}
