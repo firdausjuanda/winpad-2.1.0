@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is winpad api",
   "main": "app.js",
+  "engines":{
+    "node":"14.16.0"
+  },
   "scripts": {
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
