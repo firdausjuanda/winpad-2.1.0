@@ -1,5 +1,5 @@
 import './profile.css';
-import './../../components/feed/feed.css';
+import '../../components/feed/feed.css';
 import Topbar from '../../components/topbar/Topbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Cover from '../../components/cover/Cover';

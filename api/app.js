@@ -13,6 +13,8 @@ mongoose.connect(process.env.DB_CONNECT, { useUnifiedTopology: true, useCreateIn
     console.log('DB CONNECTED');
 });
 
+const PORT = process.env.PORT || 8800;
+
 app.use(bodyParser.json());
 
 app.use('/api/user', userRoute);
@@ -21,6 +23,11 @@ app.use('/api/work', workRoute);
 app.use('/api/permit', permitRoute);
 app.use('/api/company', companyRoute);
 
-app.listen(8800, () => {
+// Chech for production
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))
+}
+
+app.listen(PORT, () => {
     console.log('BACK-END IS READY');
 });

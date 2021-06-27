@@ -4,6 +4,9 @@
   "description": "This is winpad api",
   "main": "app.js",
   "scripts": {
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm install-client && npm build",
     "start": "nodemon app.js"
   },
   "author": "firdausjuanda",
